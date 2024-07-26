@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
     libsm6 \
     libxext6 \
     libxrender-dev \
-    libGL.so.1
+    libGL.so.1 \
+    libgl1-mesa-dev
 
 # copy and install requirements
 COPY requirements.txt .
