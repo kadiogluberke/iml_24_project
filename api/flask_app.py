@@ -11,9 +11,13 @@ import pickle
 # Flask app
 app = Flask(__name__, static_folder='static')
 
-# Model loading
-with open('../models/random_forest_best/random_forest_best.pkl', 'rb') as file:
+# Model loading --> for docker
+with open('models/random_forest_best/random_forest_best.pkl', 'rb') as file:
     clf = pickle.load(file)
+
+# Model loading --> for local usage
+# with open('../models/random_forest_best/random_forest_best.pkl', 'rb') as file:
+#     clf = pickle.load(file)
 
 # Integers to characters mapping
 int2char = {
@@ -119,4 +123,4 @@ def shutdown_server():
     os.kill(pid, signal.SIGINT)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5005)
