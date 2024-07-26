@@ -6,4 +6,3 @@ libfontconfig1
 libice6
 libglu1
 libgl1-mesa-dev
-libGL.so.1
