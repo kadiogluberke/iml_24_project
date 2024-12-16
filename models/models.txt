@@ -1,1 +1,0 @@
-Random Forest Best: {'model_name': 'Random_Forest', 'n_estimators': '46', 'max_depth': '23', 'min_samples_split': '3', 'min_samples_leaf': '1', 'train_data': '../data/datasets/train_data.csv', 'test_data': '../data/datasets/test_data.csv'}
