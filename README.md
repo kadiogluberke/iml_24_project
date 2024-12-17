@@ -16,15 +16,27 @@ After extracting the landmarks, a Random Forest classifier was built using these
 
 ## Setup the Project
 
+- Create a directory for the project and cd into it
+- Clone the project into this directory - use depth to avoid download large train data - (`git clone --depth 1 https://github.com/kadiogluberke/iml_24_project.git  .`)
+- Open app folder with `cd app`
+- Open Docker Desktop, if you not have it you can download from [here](https://www.docker.com/products/docker-desktop/)
+- Run `docker-compose build` to build docker image 
+- Run `docker-compose up` to run docker container 
+- Go `http://localhost:5001` to reach the interface 
+
+- Demo:
+
+![Demo](sign_lang.gif)
+
 
 ## Project Structure
 
-- **[app/](app/):** Contains files and directories for the user interface and Docker configuration.
-  - **[api/](app/api/):** Includes files for the Flask API implementation.
-  - **[models/](app/models/):** Stores the trained model used in the application.
-- **[eda/](eda/):** Contains Jupyter notebooks for exploratory data analysis.
-- **[experiments/](experiments/):** Includes notebooks for experimentation using MLflow.
-- **[real_time/](real_time/):** Contains the notebook for real-time predictions.
+- [app/](app/): Contains files and directories for the user interface and Docker configuration.
+  - [api/](app/api/): Includes files for the Flask API implementation.
+  - [models/](app/models/): Stores the trained model used in the application.
+- [eda/](eda/): Contains Jupyter notebooks for exploratory data analysis.
+- [experiments/](experiments/): Includes notebooks for experimentation using MLflow.
+- [real_time/](real_time/): Contains the notebook for real-time predictions.
 
 ## Instructors
 
