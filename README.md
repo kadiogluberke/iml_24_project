@@ -16,7 +16,7 @@ After extracting the landmarks, a Random Forest classifier was built using these
 
 ## Setup the Project
 
-- Create a directory for the project and cd into it
+- Create a directory for the project and navigate into it
 - Clone the project into this directory - use depth to avoid download large train data - (`git clone --depth 1 https://github.com/kadiogluberke/iml_24_project.git  .`)
 - Open app folder with `cd app`
 - Open Docker Desktop, if you not have it you can download from [here](https://www.docker.com/products/docker-desktop/)
@@ -26,7 +26,7 @@ After extracting the landmarks, a Random Forest classifier was built using these
 
 - Demo:
 
-![Demo](sign_lang.gif)
+    ![Demo](sign_lang.gif)
 
 
 ## Project Structure

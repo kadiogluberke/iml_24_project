@@ -169,3 +169,4 @@ venv_activate.txt
 experiments/mlruns/
 experiments/iml_project_mlflow.db
 models/
+sign_lang.mov
