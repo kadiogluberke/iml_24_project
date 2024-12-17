@@ -23,6 +23,7 @@ After extracting the landmarks, a Random Forest classifier was built using these
 - Run `docker-compose build` to build docker image 
 - Run `docker-compose up` to run docker container 
 - Go `http://localhost:5001` to reach the interface 
+- Specify port, if you want to run the image at Docker Desktop (`5001` for example)
 
 - Demo:
         
