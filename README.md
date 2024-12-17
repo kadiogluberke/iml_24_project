@@ -26,9 +26,7 @@ After extracting the landmarks, a Random Forest classifier was built using these
 
 - Demo:
 
-        <img src="sign_lang.gif" alt="Demo" width="500"/>
-
-    ![Demo](sign_lang.gif)
+        ![Demo](sign_lang.gif)
 
 
 ## Project Structure
