@@ -4,6 +4,8 @@ services:
   web:
     build: .
     ports:
-      - "5005:5005"
+      - "5001:5001"
     environment:
       FLASK_ENV: development
+    container_name: sign_lang
+    image: sign_lang:latest

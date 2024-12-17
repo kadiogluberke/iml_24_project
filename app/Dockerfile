@@ -5,11 +5,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
     libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender-dev \
-    libGL.so.1 \
-    libgl1-mesa-dev
 
 # copy and install requirements
 COPY requirements.txt .
@@ -24,8 +19,8 @@ ENV FLASK_APP=api/flask_app.py
 ENV FLASK_ENV=development
 
 # Make port 5001 available to the world outside this container
-EXPOSE 5005
+EXPOSE 5001
 
 # Run app.py when the container launches
-# CMD ["flask", "--app", "api/flask_app.py", "run", "--port=5005", "--host=0.0.0.0"]
-CMD ["python", "api/flask_app.py"]
+CMD ["flask", "--app", "api/flask_app.py", "run", "--port=5001", "--host=0.0.0.0"]
+# CMD ["python", "api/flask_app.py"]
