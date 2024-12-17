@@ -25,7 +25,8 @@ After extracting the landmarks, a Random Forest classifier was built using these
 - Go `http://localhost:5001` to reach the interface 
 
 - Demo:
-        ![Demo](sign_lang.gif)
+        
+    ![Demo](sign_lang.gif)
 
 
 ## Project Structure
